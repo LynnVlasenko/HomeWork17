@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="x8C-j8-dYt" customClass="ProductTableViewCell" customModule="Lesson17HW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x8C-j8-dYt" id="0Dd-oP-1Nb">
+                <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cio-WK-lvA">
+                        <rect key="frame" x="16.000000000000004" y="4.3333333333333321" width="35.333333333333343" height="35.333333333333343"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mr-nx-09B">
+                        <rect key="frame" x="67.333333333333343" y="4.3333333333333321" width="279.33333333333326" height="35.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Mr-nx-09B" firstAttribute="height" secondItem="0Dd-oP-1Nb" secondAttribute="height" multiplier="0.8" id="NZo-gt-aPz"/>
+                    <constraint firstItem="cio-WK-lvA" firstAttribute="width" secondItem="0Dd-oP-1Nb" secondAttribute="height" multiplier="0.8" id="Vhk-ef-7PS"/>
+                    <constraint firstItem="5Mr-nx-09B" firstAttribute="centerY" secondItem="0Dd-oP-1Nb" secondAttribute="centerY" id="ciQ-m8-jhQ"/>
+                    <constraint firstItem="cio-WK-lvA" firstAttribute="centerY" secondItem="0Dd-oP-1Nb" secondAttribute="centerY" id="h2u-hi-gIW"/>
+                    <constraint firstItem="5Mr-nx-09B" firstAttribute="leading" secondItem="cio-WK-lvA" secondAttribute="trailing" constant="16" id="kKr-UC-CKM"/>
+                    <constraint firstItem="cio-WK-lvA" firstAttribute="leading" secondItem="0Dd-oP-1Nb" secondAttribute="leading" constant="16" id="s4b-Nh-NBe"/>
+                    <constraint firstItem="cio-WK-lvA" firstAttribute="height" secondItem="0Dd-oP-1Nb" secondAttribute="height" multiplier="0.8" id="u2x-Vd-X4e"/>
+                    <constraint firstAttribute="trailing" secondItem="5Mr-nx-09B" secondAttribute="trailing" constant="16" id="vak-jO-JfG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productImage" destination="cio-WK-lvA" id="uxt-ZR-XVf"/>
+                <outlet property="productNameLabel" destination="5Mr-nx-09B" id="guE-es-c0F"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="20"/>
+        </tableViewCell>
+    </objects>
+</document>
