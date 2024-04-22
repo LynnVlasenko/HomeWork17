@@ -11,40 +11,14 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var tableAdapter: TableViewAdapterInput!
-    
-    var settingModels: [SettingCellDisplayModel] = []
-    var productModels: [ProductCellDisplayModel] = []
-    var buyProductModels: [BuyProductCellDisplayModel] = []
+    var delegate: TableAdapterDataSourceOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadData()
-        setupSectionAdapters()
-    }
-    
-    // MARK: - Private
-    private func loadData() {
-        settingModels = DataLoader().getSettingData()
-        productModels = DataLoader().getProductData()
-        buyProductModels = DataLoader().getBuyProductData()
-    }
-    
-    private func setupSectionAdapters() {
+        delegate = ProductSettingBuyCellTableAdapterDataSource()
         
-        let settingSection = SettingSectionAdapter(output: self)
-        let productSection = ProductSectionAdapter(output: self)
-        let buyProductSection = BuyProductSectionAdapter(output: self)
-        
-        let adapter = TableViewAdapter()
-        adapter.sections = [
-            productSection,
-            settingSection,
-            buyProductSection
-        ]
-        
-        tableAdapter = adapter
-        tableAdapter.setup(with: tableView)
+        delegate.loadData()
+        delegate.setupSectionAdapters().setup(with: tableView)
     }
 }

@@ -32,7 +32,8 @@
 		6CA4F9542BD303FC00FC9726 /* BuyProductCellDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F9532BD303FC00FC9726 /* BuyProductCellDisplayModel.swift */; };
 		6CA4F9572BD304C700FC9726 /* BuyProductSectionAdapterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F9562BD304C700FC9726 /* BuyProductSectionAdapterOutput.swift */; };
 		6CA4F9592BD304DA00FC9726 /* BuyProductSectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F9582BD304DA00FC9726 /* BuyProductSectionAdapter.swift */; };
-		6CA4F95B2BD309F400FC9726 /* MainViewController+AdapterOutputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F95A2BD309F400FC9726 /* MainViewController+AdapterOutputs.swift */; };
+		6CA4F95F2BD64F5600FC9726 /* ProductSettingBuyCellTableAdapterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F95E2BD64F5600FC9726 /* ProductSettingBuyCellTableAdapterDataSource.swift */; };
+		6CA4F9612BD652FE00FC9726 /* TableAdapterDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F9602BD652FE00FC9726 /* TableAdapterDataSourceOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +64,8 @@
 		6CA4F9532BD303FC00FC9726 /* BuyProductCellDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProductCellDisplayModel.swift; sourceTree = "<group>"; };
 		6CA4F9562BD304C700FC9726 /* BuyProductSectionAdapterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProductSectionAdapterOutput.swift; sourceTree = "<group>"; };
 		6CA4F9582BD304DA00FC9726 /* BuyProductSectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyProductSectionAdapter.swift; sourceTree = "<group>"; };
-		6CA4F95A2BD309F400FC9726 /* MainViewController+AdapterOutputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+AdapterOutputs.swift"; sourceTree = "<group>"; };
+		6CA4F95E2BD64F5600FC9726 /* ProductSettingBuyCellTableAdapterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSettingBuyCellTableAdapterDataSource.swift; sourceTree = "<group>"; };
+		6CA4F9602BD652FE00FC9726 /* TableAdapterDataSourceOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAdapterDataSourceOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				6CA4F93E2BD2ED0900FC9726 /* Common */,
 				6CA4F9262BD2E3B400FC9726 /* View */,
 				6CA4F9222BD2DE2F00FC9726 /* Screen */,
+				6CA4F9632BD654B800FC9726 /* DataSource */,
 				6CA4F93F2BD2ED2E00FC9726 /* Service */,
 			);
 			path = Source;
@@ -298,9 +301,17 @@
 			isa = PBXGroup;
 			children = (
 				6CA4F90F2BD2DC2000FC9726 /* MainViewController.swift */,
-				6CA4F95A2BD309F400FC9726 /* MainViewController+AdapterOutputs.swift */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		6CA4F9632BD654B800FC9726 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6CA4F9602BD652FE00FC9726 /* TableAdapterDataSourceOutput.swift */,
+				6CA4F95E2BD64F5600FC9726 /* ProductSettingBuyCellTableAdapterDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,13 +394,14 @@
 				6CA4F9102BD2DC2000FC9726 /* MainViewController.swift in Sources */,
 				6CA4F92C2BD2E64D00FC9726 /* SettingCellDisplayModel.swift in Sources */,
 				6CA4F9572BD304C700FC9726 /* BuyProductSectionAdapterOutput.swift in Sources */,
-				6CA4F95B2BD309F400FC9726 /* MainViewController+AdapterOutputs.swift in Sources */,
 				6CA4F9372BD2E77800FC9726 /* SectionAdapterInput.swift in Sources */,
+				6CA4F9612BD652FE00FC9726 /* TableAdapterDataSourceOutput.swift in Sources */,
 				6CA4F94D2BD2FD4C00FC9726 /* ProductSectionAdapter.swift in Sources */,
 				6CA4F9312BD2E70000FC9726 /* TableViewAdapterInput.swift in Sources */,
 				6CA4F9442BD2F82E00FC9726 /* ProductTableViewCell.swift in Sources */,
 				6CA4F9332BD2E70F00FC9726 /* TableViewAdapter.swift in Sources */,
 				6CA4F9282BD2E42E00FC9726 /* SettingTableViewCell.swift in Sources */,
+				6CA4F95F2BD64F5600FC9726 /* ProductSettingBuyCellTableAdapterDataSource.swift in Sources */,
 				6CA4F9542BD303FC00FC9726 /* BuyProductCellDisplayModel.swift in Sources */,
 				6CA4F93B2BD2EB0700FC9726 /* SettingSectionAdapterOutput.swift in Sources */,
 				6CA4F9592BD304DA00FC9726 /* BuyProductSectionAdapter.swift in Sources */,
