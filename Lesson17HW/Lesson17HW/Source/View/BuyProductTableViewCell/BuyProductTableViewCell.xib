@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DcH-Kg-HBi" customClass="BuyProductTableViewCell" customModule="Lesson17HW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DcH-Kg-HBi" id="nX0-zz-of9">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yL0-Im-NGf">
+                        <rect key="frame" x="16.000000000000004" y="4.3333333333333321" width="35.333333333333343" height="35.333333333333343"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Es1-m5-Y8p">
+                        <rect key="frame" x="67.333333333333314" y="2" width="218.66666666666669" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxr-bQ-s87">
+                                <rect key="frame" x="0.0" y="0.0" width="218.66666666666666" height="17.666666666666668"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quS-IN-hZJ">
+                                <rect key="frame" x="0.0" y="22.666666666666671" width="218.66666666666666" height="17.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRV-en-CnU">
+                        <rect key="frame" x="302" y="0.0" width="75" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="0wt-uh-kJM"/>
+                            <constraint firstAttribute="width" constant="75" id="5us-SJ-0Dl"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Buy"/>
+                        <connections>
+                            <action selector="buyProductButtonAction:" destination="DcH-Kg-HBi" eventType="touchUpInside" id="jYs-iM-32R"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yL0-Im-NGf" firstAttribute="leading" secondItem="nX0-zz-of9" secondAttribute="leading" constant="16" id="5MN-px-VJm"/>
+                    <constraint firstItem="YRV-en-CnU" firstAttribute="leading" secondItem="Es1-m5-Y8p" secondAttribute="trailing" constant="16" id="9xJ-nf-oTQ"/>
+                    <constraint firstItem="Es1-m5-Y8p" firstAttribute="centerY" secondItem="nX0-zz-of9" secondAttribute="centerY" id="MlL-lU-hx2"/>
+                    <constraint firstItem="Qxr-bQ-s87" firstAttribute="height" secondItem="nX0-zz-of9" secondAttribute="height" multiplier="0.4" id="UcN-h3-HxI"/>
+                    <constraint firstItem="YRV-en-CnU" firstAttribute="centerY" secondItem="nX0-zz-of9" secondAttribute="centerY" id="WMa-Sj-B1J"/>
+                    <constraint firstAttribute="trailing" secondItem="YRV-en-CnU" secondAttribute="trailing" constant="16" id="bcA-xs-GBi"/>
+                    <constraint firstItem="yL0-Im-NGf" firstAttribute="height" secondItem="nX0-zz-of9" secondAttribute="height" multiplier="0.8" id="cEJ-8u-MzW"/>
+                    <constraint firstItem="quS-IN-hZJ" firstAttribute="height" secondItem="nX0-zz-of9" secondAttribute="height" multiplier="0.4" id="mwx-oQ-a1F"/>
+                    <constraint firstItem="yL0-Im-NGf" firstAttribute="centerY" secondItem="nX0-zz-of9" secondAttribute="centerY" id="oiU-aP-cXu"/>
+                    <constraint firstItem="yL0-Im-NGf" firstAttribute="width" secondItem="nX0-zz-of9" secondAttribute="height" multiplier="0.8" id="rnP-ML-bEv"/>
+                    <constraint firstItem="Es1-m5-Y8p" firstAttribute="leading" secondItem="yL0-Im-NGf" secondAttribute="trailing" constant="16" id="vL0-HD-neZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buyProductButton" destination="YRV-en-CnU" id="fc5-9l-ftU"/>
+                <outlet property="buyProductDescriptionLabel" destination="quS-IN-hZJ" id="0iE-nL-5jI"/>
+                <outlet property="buyProductImage" destination="yL0-Im-NGf" id="Gtj-SW-ckS"/>
+                <outlet property="buyProductNameLabel" destination="Qxr-bQ-s87" id="lUv-SL-gLR"/>
+                <outlet property="contentLabelStackView" destination="Es1-m5-Y8p" id="gy6-kj-OdR"/>
+            </connections>
+            <point key="canvasLocation" x="-80" y="20"/>
+        </tableViewCell>
+    </objects>
+</document>
